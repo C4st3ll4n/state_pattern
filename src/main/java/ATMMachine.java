@@ -6,7 +6,7 @@ public class ATMMachine {
 
     ATMState state;
 
-    double cashInMachine;
+    double cashInMachine = 35000;
     boolean correctPinEntered = false;
 
     public ATMMachine() {
@@ -36,7 +36,7 @@ public class ATMMachine {
         state.ejectCard();
     }
 
-    public void requestCach(double amount) {
+    public void requestCash(double amount) {
         state.requestCash(amount);
     }
 
